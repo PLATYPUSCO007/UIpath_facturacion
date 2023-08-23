@@ -1,0 +1,67 @@
+09/30/2022 09:27:18 => [Debug] Execution started for file: Main
+09/30/2022 09:27:21 => [Info] test execution started
+09/30/2022 09:27:26 => [Info] RUT ------001
+2. Concepto 0 2 Actualización
+Espacio reservado para la DIAN 4. Número de formulario 14503632330
+
+5. Número de Identificación Tributaria (NIT): 6. DV 12. Dirección seccional 14. Buzón electrónico
+9 0 0 4 7 7 7 0 5 - 6 Impuestos de Cali 5
+IDENTIFICACION
+24. Tipo de contribuyente: 25. Tipo de documento: 26. Número de Identificación: 27. Fecha expedición:
+Persona jurídica  1
+Lugar de expedición 28.  País: 29. Departamento: 30. Ciudad/Municipio:
+
+31. Primer apellido  32. Segundo apellido 33. Primer nombre 34. Otros nombres
+
+35. Razón social:
+EDIFICIO MIRADOR DE LAS FLORES - PROPIEDAD HORIZONTAL
+
+36. Nombre comercial: 37. Sigla:
+
+UBICACION
+38. País: 39. Departamento: 40. Ciudad/Municipio:
+COLOMBIA  1 6 9 Valle del Cauca  7 6 Cali  0 0 1
+
+41. Dirección principal
+CL 67 NORTE   4 B   85
+42. Correo electrónico: 43. Código postal 44. Teléfono 1: 45. Teléfono 2:
+miradordelasflores@gmail.com                       3 9 0 9 4 7 6
+CLASIFICACION
+Actividad económica Ocupación
+Actividad principal Actividad secundaria Otras actividades 52. Número
+46. Código: 47. Fecha inicio actividad: 48. Código: 49. Fecha inicio actividad: 50. Código: 1 2 51. Código establecimientos
+9 4 9 9 2 0 1 1 0 9 1 3
+Responsabilidades, Calidades y Atributos
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+53. Código: 7 1 4 4 2
+07- Retención en la fuente a título de  rent
+14- Informante de exogena
+42- Obligado a llevar contabilidad
+
+Obligados aduaneros Exportadores
+
+1 2 3 4 5 6 7 8 9 10
+55. Forma 56. Tipo 1 2 3
+54. Código: Exportadores
+57. Modo
+11 12 13 14 15 16 17 18 19 20
+58. CPC
+
+IMPORTANTE: Sin perjuicio de las actualizaciones a que haya lugar, la inscripción en el Registro Único Tributario -RUT-, tendrá vigencia indefinida y en consecuencia no se exigirá su renovación
+Para uso exclusivo de la DIAN
+59. Anexos:       SI X NO 60. No. de Folios:  3 61. Fecha: 2 0 1 9 0 3 1 5
+
+Sin perjuicio de las verificaciones que la DIAN realice.
+Firma autorizada:
+
+Parágrafo del artículo 1.6.1.2.20 del Decreto 1625 de 2016
+Firma del solicitante: 984. Nombre RAMIREZ CALERO DIEGO ANDRES
+985. Cargo: Analista III
+
+Fecha generación documento PDF: 29-04-2020 06:14:56PM
+09/30/2022 09:27:45 => [Error] Assign: Object reference not set to an instance of an object.
+09/30/2022 09:27:46 => [Info] test execution ended in: 00:00:24
+09/30/2022 09:27:46 => [Error] RemoteException wrapping System.NullReferenceException: Object reference not set to an instance of an object. 
+   at UiPath.Core.Activities.ScopeActivity.OnFaulted(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom)
+   at System.Activities.Runtime.FaultCallbackWrapper.Invoke(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom)
+   at System.Activities.Runtime.FaultCallbackWrapper.FaultWorkItem.Execute(ActivityExecutor executor, BookmarkManager bookmarkManager)

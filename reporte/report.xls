@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+<Author>NetSuite</Author>
+<LastAuthor>NetSuite</LastAuthor>
+<Company>NetSuite</Company>
+</DocumentProperties>
+<Styles>
+<Style ss:ID="company">
+<Alignment ss:Horizontal="Center"/>
+<Font ss:Bold="1"/>
+</Style> <Style ss:ID="error">
+<Alignment ss:Horizontal="Center"/>
+<Interior ss:Color="#d04040" ss:Pattern="Solid"/>
+<Font ss:Bold="1"/>
+</Style> <Style ss:ID="header">
+<Alignment ss:Horizontal="Center"/>
+<Font ss:Size="7" ss:Bold="1"/>
+<Interior ss:Color="#d0d0d0" ss:Pattern="Solid"/>
+</Style> <Style ss:ID="Default" ss:Name="Normal">
+<Alignment ss:Vertical="Bottom"/>
+<Borders/>
+<Font ss:FontName="Arial" ss:Size="8"/>
+<Interior/>
+<NumberFormat/>
+<Protection/>
+</Style>
+<Style ss:ID="s__TIMEOFDAY"><NumberFormat ss:Format="Medium Time"/></Style>
+<Style ss:ID="s__DATETIME"><NumberFormat ss:Format="General Date"/></Style>
+<Style ss:ID="s__DATETIMETZ"><NumberFormat ss:Format="General Date"/></Style>
+<Style ss:ID="s__DATE"><NumberFormat ss:Format="Short Date"/>
+</Style><Style ss:ID="s__text"></Style><Style ss:ID="s__currency"><NumberFormat ss:Format="Currency"/></Style>
+<Style ss:ID="s__percent"><NumberFormat ss:Format="Percent"/></Style>
+<Style ss:ID="s1_b_text"><Alignment ss:Indent="1"/><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/></Style>
+<Style ss:ID="s_b_text"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/></Style>
+<Style ss:ID="s2__text"><Alignment ss:Indent="2"/></Style>
+<Style ss:ID="s_b_currency"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/><NumberFormat ss:Format="Currency"/></Style>
+<Style ss:ID="s_currency_nosymbol"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" /><NumberFormat ss:Format="#,##0.00_);[Red]\(#,##0.00\)"/></Style>
+<Style ss:ID="s1__text"><Alignment ss:Indent="1"/></Style>
+<Style ss:ID="s_b_currency_X"><Font ss:FontName="Verdana" x:Family="Swiss" ss:Size="8" ss:Color="#000000" ss:Bold="1"/><Interior ss:Color="#f0e0e0" ss:Pattern="Solid"/><NumberFormat ss:Format="Currency"/></Style>
+<Style ss:ID="s__currency_es_CO"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;Col$&quot;#,##0.00_);(&quot;Col$&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_es_PE"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;PEN&quot;#,##0.00_);(&quot;PEN&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_US"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;$&quot;#,##0.00_);(&quot;$&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_GB"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;£&quot;#,##0.00_);(&quot;£&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_en_CA"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;Can$&quot;#,##0.00_);(&quot;Can$&quot;#,##0.00)"/></Style>
+<Style ss:ID="s__currency_fr_FR_EURO"><Alignment ss:Vertical="Center" ss:Horizontal="Right"/><NumberFormat ss:Format="&quot;€&quot;#,##0.00_);(&quot;€&quot;#,##0.00)"/></Style>
+</Styles>
+<Worksheet ss:Name="ResultadosSMORDENESDESERVICIOA">
+<Table><Row>
+<Cell ss:StyleID="header"><Data ss:Type="String">Tipo</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Número de documento</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Fecha</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Representante de ventas</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">CENTRO DE COSTO</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">SM LOTE</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">NIT</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Cliente</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Requiere Proforma</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">SM Fecha de radicación</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">SM Enviado a facturación</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">% avance</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Máximo de Enviado a Facturacion</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Máximo de Devuelto por Contabilidad</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Máximo de Reenvió a Facturación</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">Observaciones Contables</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">id cliente</Data></Cell>
+<Cell ss:StyleID="header"><Data ss:Type="String">ID interno</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">59805</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-01-03T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">MARIA VICTORIA CEBALLOS LONDOÑO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">115135</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">675 ORGANIZACION TERPEL S A</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-20T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-01-03T14:52:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T09:45:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3190</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">409166</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">613828</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-07-26T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">LORENA ROCIO VASQUEZ FORERO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE CARTAGENA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">125843</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">34823 SOLUCIONES Y CABLEADOS S.A.S</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-07-26T14:33:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T10:30:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">82012</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">632737</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">6141953</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-08-17T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">GUSTAVO ADOLFO CARDENAS MORENO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE CONVENIOS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">127003</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1426 LEONEL RUIZ MONROY</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-12T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-08-17T09:48:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-12T15:51:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3952</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">659584</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614210201</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-09-05T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">LORENA ROCIO VASQUEZ FORERO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE CARTAGENA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">105042</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">900563447</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">11883 PROMOTORA ORO BLANCO SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-09-05T12:24:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T08:49:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T09:31:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">24411</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">679604</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211360</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-06T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">JULY DANIELA MURCIA PEDRAZA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">129164</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">3913 EDIFICIO IMAGEN 127 PROPIEDAD HORIZONTAL</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-06T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-06T15:48:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-06T17:08:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T09:04:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">6439</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">717526</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211426</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">LUISA FERNANDA CAMACHO CUADRADO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">123082</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">547 MEGAL S.A.S</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-10T09:45:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-18T07:42:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3062</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">719094</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211456</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-10T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">LUISA FERNANDA CAMACHO CUADRADO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">130949</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">41725 ALFREDO ANTONIO SALDARRIAGA SUAREZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-10T17:50:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-18T07:34:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">101046</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">720999</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211519</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-12T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">YESICA PAOLA BUSTAMANTE CAÑAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131231</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">41789 ANDRES POSADA LONDOÑO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-25T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-12T11:42:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T12:43:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">101272</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">724071</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211550</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-12T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">NATALY ORREGO GAVIRIA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">130987</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1058 CONSTRUREDES GRUPO GOMEZ S.A.S.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-25T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-12T16:04:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T10:13:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3573</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">725550</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211577</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CAMILO ERNESTO  RESTREPO DUQUE</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETILAP CERTIFICACION</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131189</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">800127132</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">124 FEILO SYLVANIA COLOMBIA S.A.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T10:17:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">2639</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">725909</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211577</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CAMILO ERNESTO  RESTREPO DUQUE</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETILAP PRUEBAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131189</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">800127132</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">124 FEILO SYLVANIA COLOMBIA S.A.</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T10:17:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">2639</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">725909</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211579</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">NATALIA DEL PILAR OSPINA PULIDO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">5568A</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">900517505</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">20452 CONSTRUPROYECTOS LINE SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T10:25:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">33035</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">725918</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211586</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">LORENA ROCIO VASQUEZ FORERO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETILAP CARTAGENA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">106842</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">29658 PROMOTORA BOULEVARD II S.A.S</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T11:52:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T12:41:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">61727</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">726088</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211588</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ADRIANA MARITZA QUITIAN ROZO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131135</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">900615402</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">4567 LIVIT S A S</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T12:07:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">15966</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">726094</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211592</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CARLOS ANDRES MONTOYA VALENCIA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE PEREIRA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131198</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">946 GRUPO INNOVA CONSTRUCTORA SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T13:02:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3461</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">726244</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211602</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">DANNA LIZETH POVEDA FERNANDEZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">126378</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">9 0 0 8 2 4 8 1 8</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">41840 BANDURA S C A</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T15:03:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">101461</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727093</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211603</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">DANNA LIZETH POVEDA FERNANDEZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">126378</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">901320142</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">41842 UNOSESENTAIUNO INMOBILIARIA SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T15:18:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">101466</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727104</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211613</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">SERGIO ANDRES LOPEZ FUENTES</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE BUCARAMANGA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">130503</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">737 EME INGENIERIA S.A. BIC</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-13T16:40:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3252</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727171</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211624</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">MARIA VICTORIA CEBALLOS LONDOÑO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">125553</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">25276 INSTALACIONES ELECTRICAS L3J SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T07:43:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">45977</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727270</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211627</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">MARIA VICTORIA CEBALLOS LONDOÑO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131399</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">25276 INSTALACIONES ELECTRICAS L3J SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-30T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T07:58:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">45977</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727279</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211638</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">JULY DANIELA MURCIA PEDRAZA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">129788</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">3450 EDIFICIO PIETRAMONTE - PROPIEDAD HORIZONTAL</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T10:22:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">5976</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727669</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211639</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">JULY DANIELA MURCIA PEDRAZA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">130469</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">9229 EDIFICIO ALTAMIRA PLAZA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T10:37:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">21757</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727678</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211640</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">JULY DANIELA MURCIA PEDRAZA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">130248</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">3795 EDIFICIO TORRE UNIKA VIRREY - PROPIEDAD HORIZONTAL</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T10:39:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">6321</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727680</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211641</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CAMILO ERNESTO  RESTREPO DUQUE</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETILAP CERTIFICACION</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131138</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">35303 THE FUTURE IS 50/50</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T10:39:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">83577</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727679</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211641</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CAMILO ERNESTO  RESTREPO DUQUE</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETILAP PRUEBAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131138</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">35303 THE FUTURE IS 50/50</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T10:39:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">83577</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727679</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211642</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">FRANCI LORENA CELIS SANCHEZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131240</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">27339 CONSORCIO CACIQUE</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T10:46:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">52490</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727785</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211643</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">LUISA FERNANDA CAMACHO CUADRADO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">128285</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">507 ELECTROMONTAJES SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T11:11:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-18T07:46:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3022</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727890</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211644</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">FRANCI LORENA CELIS SANCHEZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BOGOTA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">128826</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">9447 HOLCIM COLOMBIA SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T11:13:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">21975</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727891</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211645</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">YESICA PAOLA BUSTAMANTE CAÑAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE BARRANQUILLA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131436</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1984 GUSTAVO DE JESUS ORREGO PALACIO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-25T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T11:22:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">4510</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">727894</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211646</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">JOHN JAIRO VICTORIA MORENO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES CALI</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">127605</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">742 INGREDION COLOMBIA SA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T11:57:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3257</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728118</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211647</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">YESICA PAOLA BUSTAMANTE CAÑAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE MEDELLIN</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131263</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">554 INSTELECTRICAS SA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T12:33:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3069</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728345</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211649</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">JOHN JAIRO VICTORIA MORENO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES CALI</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">126803</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">25814 CONJUNTO RESIDENCIAL SANTA MARIA DE LOS VIENTOS - PROPIEDAD HORIZONTAL</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T14:15:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">47678</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728777</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211652</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">AYLIN MARCELA MENDOZA RUIZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BARRANQUILLA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">126395</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">31164 EDIFICIO OCEAN CLUB</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-20T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T14:59:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T16:14:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T16:16:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">67504</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728818</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211653</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">JOHN JAIRO VICTORIA MORENO</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES CALI</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131218</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">4812 EDEL ASCENSORES SAS</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T15:12:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">16257</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728831</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211654</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">AYLIN MARCELA MENDOZA RUIZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BARRANQUILLA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">128872</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">9568 EDIFICIO PARQUE AVENIDA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T15:38:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">22096</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728856</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211656</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Andrea Carolina Castillo Paternina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES CARTAGENA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">125664</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">25074 PROMOTORA LAGOS S.A.S</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T15:46:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">45013</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728864</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211657</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Andrea Carolina Castillo Paternina</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES CARTAGENA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">129136</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">14176 EDIFICIO PALMETTO SUNSET</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T15:54:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">26704</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728870</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211659</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">AYLIN MARCELA MENDOZA RUIZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ESCALERAS Y ASCENSORES BARRANQUILLA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">131475</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1215 GESTIONES INMOBILIARIAS Y URBANAS S.A.S</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-14T16:12:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3730</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728893</Data></Cell>
+</Row>
+<Row><Cell ss:StyleID="s__text"><Data ss:Type="String">Orden de Servicio</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">614211663</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">CLARA ISABEL MUÑOZ</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">RETIE BARRANQUILLA</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">124179</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">1132 GREENDIPITY S.A.S</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">No</Data></Cell>
+<Cell ss:StyleID="s__DATE"><Data ss:Type="DateTime">2022-10-25T00:00:00</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">Sí</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">ERROR: expresión no válida</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="DateTime">2022-10-18T06:31:00</Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__DATETIME"><Data ss:Type="String"></Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="String">- None -</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">3647</Data></Cell>
+<Cell ss:StyleID="s__text"><Data ss:Type="Number">728945</Data></Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

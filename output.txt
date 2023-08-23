@@ -1,0 +1,309 @@
+09/20/2022 20:11:02 => [Info] test execution started
+09/20/2022 20:11:38 => [Info] RUT ------001
+2. Concepto 0 2 Actualización
+Espacio reservado para la DIAN 4. Número de formulario 14503632330
+
+5. Número de Identificación Tributaria (NIT): 6. DV 12. Dirección seccional 14. Buzón electrónico
+9 0 0 4 7 7 7 0 5 - 6 Impuestos de Cali 5
+IDENTIFICACION
+24. Tipo de contribuyente: 25. Tipo de documento: 26. Número de Identificación: 27. Fecha expedición:
+Persona jurídica  1
+Lugar de expedición 28.  País: 29. Departamento: 30. Ciudad/Municipio:
+
+31. Primer apellido  32. Segundo apellido 33. Primer nombre 34. Otros nombres
+
+35. Razón social:
+EDIFICIO MIRADOR DE LAS FLORES - PROPIEDAD HORIZONTAL
+
+36. Nombre comercial: 37. Sigla:
+
+UBICACION
+38. País: 39. Departamento: 40. Ciudad/Municipio:
+COLOMBIA  1 6 9 Valle del Cauca  7 6 Cali  0 0 1
+
+41. Dirección principal
+CL 67 NORTE   4 B   85
+42. Correo electrónico: 43. Código postal 44. Teléfono 1: 45. Teléfono 2:
+miradordelasflores@gmail.com                       3 9 0 9 4 7 6
+CLASIFICACION
+Actividad económica Ocupación
+Actividad principal Actividad secundaria Otras actividades 52. Número
+46. Código: 47. Fecha inicio actividad: 48. Código: 49. Fecha inicio actividad: 50. Código: 1 2 51. Código establecimientos
+9 4 9 9 2 0 1 1 0 9 1 3
+Responsabilidades, Calidades y Atributos
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+53. Código: 7 1 4 4 2
+07- Retención en la fuente a título de  rent
+14- Informante de exogena
+42- Obligado a llevar contabilidad
+
+Obligados aduaneros Exportadores
+
+1 2 3 4 5 6 7 8 9 10
+55. Forma 56. Tipo 1 2 3
+54. Código: Exportadores
+57. Modo
+11 12 13 14 15 16 17 18 19 20
+58. CPC
+
+IMPORTANTE: Sin perjuicio de las actualizaciones a que haya lugar, la inscripción en el Registro Único Tributario -RUT-, tendrá vigencia indefinida y en consecuencia no se exigirá su renovación
+Para uso exclusivo de la DIAN
+59. Anexos:       SI X NO 60. No. de Folios:  3 61. Fecha: 2 0 1 9 0 3 1 5
+
+Sin perjuicio de las verificaciones que la DIAN realice.
+Firma autorizada:
+
+Parágrafo del artículo 1.6.1.2.20 del Decreto 1625 de 2016
+Firma del solicitante: 984. Nombre RAMIREZ CALERO DIEGO ANDRES
+985. Cargo: Analista III
+
+Fecha generación documento PDF: 29-04-2020 06:14:56PM
+09/20/2022 20:11:58 => [Info] RUT ------2. Concepto 0 2 Actualización
+
+4. Número de formulario 14767077287
+
+5. Número de Identificación Tributaria (NIT) 6. DV 12. Dirección seccional 14. Buzón electrónico
+9 0 1 2 3 9 1 7 1 7 Impuestos de Cartagena 6
+IDENTIFICACIÓN
+24. Tipo de contribuyente 25. Tipo de documento 26. Número de Identificación 27. Fecha expedición
+Persona jurídica 1
+Lugar de expedición 28. País 29. Departamento 30. Ciudad/Municipio
+
+31. Primer apellido 32. Segundo apellido 33. Primer nombre 34. Otros nombres
+
+35. Razón social
+CENTRO CORPORATIVO SERENA DEL MAR - EDIFICIO UNIVERSIDAD DE LOS ANDES
+
+36. Nombre comercial 37. Sigla
+
+UBICACIÓN
+38. País 39. Departamento 40. Ciudad/Municipio
+COLOMBIA 1 6 9 Bolívar 1 3 Cartagena 0 0 1
+
+41. Dirección principal
+KM 8 CARR VIA AL MAR ZN NORTE  ED CENTRO CORPORATIVO SERENA DEL MAR
+42. Correo electrónico jhoyos@micomunidadsdm.com
+43. Código postal 44. Teléfono 1 6 4 5 5 3 2 0 45. Teléfono 2
+CLASIFICACIÓN
+Actividad económica Ocupación
+Actividad principal Actividad secundaria Otras actividades 52. Número
+46. Código 47. Fecha inicio actividad 48. Código 49. Fecha inicio actividad 50. Código 1 2 51. Código establecimientos
+9 4 9 9 2 0 1 8 1 1 2 2
+Responsabilidades, Calidades y Atributos
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+53. Código 5 7 1 4 4 8 5 2
+05- Impto. renta y compl.  régimen  ordinar
+07- Retención en la fuente a título de  rent
+14- Informante de exogena
+48 - Impuesto sobre las ventas - IVA
+52 - Facturador electrónico
+
+Obligados aduaneros Exportadores
+
+1 2 3 4 5 6 7 8 9 10
+55. Forma 56. Tipo 1 2 3
+54. Código 57. Modo
+Exportadores
+11 12 13 14 15 16 17 18 19 20
+58. CPC
+
+IMPORTANTE: Sin perjuicio de las actualizaciones a que haya lugar, la inscripción en el Registro Único Tributario -RUT-, tendrá vigencia indefinida y en consecuencia no se exigirá su renovación
+Para uso exclusivo de la DIAN
+59. Anexos          SI NO X 60. No. de Folios: 0 61. Fecha 2022 - 04 - 29 / 10 : 20: 25
+
+Sin perjuicio de las verificaciones que la DIAN realice.
+Firma autorizada:
+
+Parágrafo del artículo 1.6.1.2.20 del Decreto 1625 de 2016
+Firma del solicitante: 984. Nombre DEL CASTILLO TRUCCO RAFAEL SIMON
+985. Cargo Representante legal Certificado
+
+Fecha generación documento PDF: 29-04-2022 10:30:44AM
+09/20/2022 20:12:19 => [Info] RUT ------2. Concepto 0 2 Actualización
+
+4. Número de formulario 14831926170
+
+5. Número de Identificación Tributaria (NIT) 6. DV 12. Dirección seccional 14. Buzón electrónico
+8 6 0 0 0 7 5 3 8 2 Operativa de Grandes Contribuyentes 3 1
+IDENTIFICACIÓN
+24. Tipo de contribuyente 25. Tipo de documento 26. Número de Identificación 27. Fecha expedición
+Persona jurídica  1
+
+Lugar de expedición 28.  País 29. Departamento 30. Ciudad/Municipio
+
+31. Primer apellido  32. Segundo apellido 33. Primer nombre 34. Otros nombres
+
+35. Razón social
+FEDERACION NACIONAL DE CAFETEROS DE COLOMBIA
+
+36. Nombre comercial 37. Sigla
+
+UBICACIÓN
+38. País 39. Departamento 40. Ciudad/Municipio
+COLOMBIA  1 6 9 Bogotá D.C.  1 1 Bogotá, D.C.  0 0 1
+
+41. Dirección principal
+CL 73   8    13
+42. Correo electrónico notificaciones.fnc@cafedecolombia.com
+43. Código postal 5 7 5 3 4     44. Teléfono 1         3 1 3 7 3 1 7 45. Teléfono 2         3 1 3 6 6 0 0
+CLASIFICACIÓN
+Actividad económica Ocupación
+Actividad principal Actividad secundaria Otras actividades 52. Número
+46. Código 47. Fecha inicio actividad 48. Código 49. Fecha inicio actividad 50. Código 1 2 51. Código establecimientos
+1 0 6 3 2 0 1 8 0 4 0 1 9 4 1 1 2 0 1 2 0 1 0 1 4 7 1 9
+Responsabilidades, Calidades y Atributos
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+53. Código 6 7 8 9 1 0 1 3 1 4 1 9 2 3 3 3 4 2 4 8 5 2
+06- Ingresos y patrimonio. 19- Productor de bienes y/o servicios exen
+07- Retención en la fuente a título de  rent 23- Agente de retencion en ventas
+08- Retención timbre nacional 33- Impuesto nacional al consumo
+09- Retención en la fuente en el impuesto 42- Obligado a llevar contabilidad
+10- Obligado aduanero 48 - Impuesto sobre las ventas - IVA
+13- Gran contribuyente 52 - Facturador electrónico
+14- Informante de exogena
+Obligados aduaneros Exportadores
+
+1 2 3 4 5 6 7 8 9 10
+2 2 2 3 3 7 3 8 2 1 4 4             55. Forma 56. Tipo 1 2 3
+54. Código Exportadores 2 3
+57. Modo
+11 12 13 14 15 16 17 18 19 20 1 3
+58. CPC 8 3 8 3
+
+IMPORTANTE: Sin perjuicio de las actualizaciones a que haya lugar, la inscripción en el Registro Único Tributario -RUT-, tendrá vigencia indefinida y en consecuencia no se exigirá su renovación
+Para uso exclusivo de la DIAN
+59. Anexos          SI NO X 60. No. de Folios:  0 61. Fecha 2022 - 01 - 19 / 14 : 41: 07
+
+Sin perjuicio de las verificaciones que la DIAN realice.
+Firma autorizada:
+
+Parágrafo del artículo 1.6.1.2.20 del Decreto 1625 de 2016
+Firma del solicitante: 984. Nombre ACTUACIÓN DE OFICIO AUTOMÁTICA
+985. Cargo
+
+Fecha generación documento PDF: 07-06-2022 11:13:28AM
+09/20/2022 20:12:39 => [Info] RUT ------2. Concepto 0 2 Actualización
+
+4. Número de formulario 14812844205
+
+5. Número de Identificación Tributaria (NIT) 6. DV 12. Dirección seccional 14. Buzón electrónico
+9 0 0 4 0 3 2 2 2 3 Impuestos de Cartagena 6
+IDENTIFICACIÓN
+24. Tipo de contribuyente 25. Tipo de documento 26. Número de Identificación 27. Fecha expedición
+Persona jurídica  1
+
+Lugar de expedición 28.  País 29. Departamento 30. Ciudad/Municipio
+
+31. Primer apellido  32. Segundo apellido 33. Primer nombre 34. Otros nombres
+
+35. Razón social
+SURTIDORA PEREZ AGUIRRE SURTI PAG S.A.S.
+
+36. Nombre comercial 37. Sigla
+
+UBICACIÓN
+38. País 39. Departamento 40. Ciudad/Municipio
+COLOMBIA  1 6 9 Bolívar  1 3 Cartagena  0 0 1
+
+41. Dirección principal
+BRR ESCALLONVILLA CL BUENOS AIRES  CRA 54 N O 36 C 06
+42. Correo electrónico surti-pag@hotmail.com
+43. Código postal          44. Teléfono 1      3 0 0 7 1 7 1 9 1 4 45. Teléfono 2      3 2 1 5 0 1 8 0 5 4
+CLASIFICACIÓN
+Actividad económica Ocupación
+Actividad principal Actividad secundaria Otras actividades 52. Número
+46. Código 47. Fecha inicio actividad 48. Código 49. Fecha inicio actividad 50. Código 1 2 51. Código establecimientos
+4 6 5 9 2 0 1 0 1 2 2 2
+Responsabilidades, Calidades y Atributos
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+53. Código 5 7 9 1 0 1 4 4 2 4 8 5 2
+05- Impto. renta y compl.  régimen  ordinar 52 - Facturador electrónico
+07- Retención en la fuente a título de  rent
+09- Retención en la fuente en el impuesto
+10- Obligado aduanero
+14- Informante de exogena
+42- Obligado a llevar contabilidad
+48 - Impuesto sobre las ventas - IVA
+Obligados aduaneros Exportadores
+
+1 2 3 4 5 6 7 8 9 10
+2 2 2 3                         55. Forma 56. Tipo 1 2 3
+54. Código Exportadores
+57. Modo
+11 12 13 14 15 16 17 18 19 20 2 1
+58. CPC
+
+IMPORTANTE: Sin perjuicio de las actualizaciones a que haya lugar, la inscripción en el Registro Único Tributario -RUT-, tendrá vigencia indefinida y en consecuencia no se exigirá su renovación
+Para uso exclusivo de la DIAN
+59. Anexos          SI NO X 60. No. de Folios:  0 61. Fecha 2022 - 02 - 16 / 09 : 05: 44
+
+Sin perjuicio de las verificaciones que la DIAN realice.
+Firma autorizada:
+
+Parágrafo del artículo 1.6.1.2.20 del Decreto 1625 de 2016
+Firma del solicitante: 984. Nombre PEREZ AGUIRRE JAQUELINE
+985. Cargo Representante legal Certificado
+
+Fecha generación documento PDF: 16-02-2022 09:05:55AM
+09/20/2022 20:13:01 => [Info] RUT ------001
+2. Concepto 0 2 Actualización
+Espacio reservado para la DIAN 4. Número de formulario 14677983377
+
+5. Número de Identificación Tributaria (NIT): 6. DV 12. Dirección seccional 14. Buzón electrónico
+9 0 0 6 6 3 8 9 0 - 8 Impuestos y Aduanas de Pereira 1 6
+IDENTIFICACION
+24. Tipo de contribuyente: 25. Tipo de documento: 26. Número de Identificación: 27. Fecha expedición:
+Persona jurídica  1
+Lugar de expedición 28.  País: 29. Departamento: 30. Ciudad/Municipio:
+
+31. Primer apellido  32. Segundo apellido 33. Primer nombre 34. Otros nombres
+
+35. Razón social:
+T & T INGENIERIA SAS
+
+36. Nombre comercial: 37. Sigla:
+
+UBICACION
+38. País: 39. Departamento: 40. Ciudad/Municipio:
+COLOMBIA  1 6 9 Risaralda  6 6 Pereira  0 0 1
+
+41. Dirección principal
+CL 19    12   69 CC FIDUCENTRO LC  A 301
+42. Correo electrónico: 43. Código postal 44. Teléfono 1: 45. Teléfono 2:
+tytingsas@gmail.com                       3 2 5 3 2 8 2      3 1  5 4 7 8 7 1 4 4
+CLASIFICACION
+Actividad económica Ocupación
+Actividad principal Actividad secundaria Otras actividades 52. Número
+46. Código: 47. Fecha inicio actividad: 48. Código: 49. Fecha inicio actividad: 50. Código: 1 2 51. Código establecimientos
+4 2 2 0 2 0 1 3 1 0 1 0 7 1 1 0 2 0 1 3 1 0 1 0 4 1 1 1 4 1 1 2      1
+Responsabilidades, Calidades y Atributos
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+53. Código: 4 7 7 9 1 4 4 8
+47 - Régimen Simple de Tributación - SIM
+07- Retención en la fuente a título de  rent
+09- Retención en la fuente en el impuesto
+14- Informante de exogena
+48 - Impuesto sobre las ventas - IVA
+
+Obligados aduaneros Exportadores
+
+1 2 3 4 5 6 7 8 9 10
+55. Forma 56. Tipo 1 2 3
+54. Código: Exportadores
+57. Modo
+11 12 13 14 15 16 17 18 19 20
+58. CPC
+
+IMPORTANTE: Sin perjuicio de las actualizaciones a que haya lugar, la inscripción en el Registro Único Tributario -RUT-, tendrá vigencia indefinida y en consecuencia no se exigirá su renovación
+Para uso exclusivo de la DIAN
+59. Anexos:       SI NO X 60. No. de Folios:  0 61. Fecha: 2 0 2 0 0 3 0 4
+
+Sin perjuicio de las verificaciones que la DIAN realice.
+Firma autorizada:
+
+Parágrafo del artículo 1.6.1.2.20 del Decreto 1625 de 2016
+Firma del solicitante: 984. Nombre
+985. Cargo: Contribuyente
+
+Fecha generación documento PDF: 04-03-2020 02:51:53PM
+09/20/2022 20:13:53 => [Info] test execution ended in: 00:02:51
